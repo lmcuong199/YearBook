@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title> Ki yeu online </title>
+<html lang="vi">
+<head> <meta charset="utf-8">
+    <title>Kỉ Yếu Lớp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px; 
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 650px;
+            margin: auto;
+        }
+        img, video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        a:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-<div>
-<h1> <img src="anh.jpg" width="594" height="396" style="display: block; margin: auto;"> </h1>
-<h1> <video src="worldcupfinal.mp4" width="594" height="396" style="display: block; margin: auto;" autoplay> </h1>
-<h1 style="text-align: center;"> <a href="anhh.jpg">Ảnh</a> </h1>
-</div>
+    <div class="container">
+        <h1>Kỉ Yếu Online</h1>
+        <img src="anh.jpg" alt="Ảnh kỉ yếu">
+        <video controls>
+            <source src="worldcupfinal.mp4">
+        </video>
+        <p><a href="anhh.jpg" target="_blank">Xem ảnh khác</a></p>
+    </div>
 </body>
 </html>
