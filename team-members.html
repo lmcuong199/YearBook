@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Thành Viên Nhóm - Kỉ Yếu Online</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & cơ bản */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdf6e3;
+      text-align: center;
+      background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5b4636;
+      font-weight: 600;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .personal-photos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+    .personal-photos figure { margin: 0; }
+    .personal-photos img {
+      width: 100%;
+      border-radius: 5px;
+      border: 3px solid #e6d8b2;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .personal-photos figcaption {
+      margin-top: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+    @media (max-width:768px) {
+      .personal-photos { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Thanh điều hướng -->
+    <nav>
+      <a href="index.html">Trang Chủ</a>
+      <a href="group-photos.html">Ảnh Tập Thể</a>
+      <a href="class-memories.html">Kỉ Niệm Lớp</a>
+    </nav>
+    <h1>Thành Viên Nhóm</h1>
+    <div class="personal-photos">
+      <figure>
+        <img src="tri.jpg" alt="Anh Trí">
+        <figcaption>Anh Trí</figcaption>
+      </figure>
+      <figure>
+        <img src="lan.jpg" alt="Đức Lân">
+        <figcaption>Đức Lân</figcaption>
+      </figure>
+      <figure>
+        <img src="ly.jpg" alt="Hải Ly">
+        <figcaption>Hải Ly</figcaption>
+      </figure>
+      <figure>
+        <img src="cuong.jpg" alt="Mạnh Cường">
+        <figcaption>Mạnh Cường</figcaption>
+      </figure>
+      <figure>
+        <img src="khoa.jpg" alt="Gia Khoa">
+        <figcaption>Gia Khoa</figcaption>
+      </figure>
+    </div>
+  </div>
+</body>
+</html>
