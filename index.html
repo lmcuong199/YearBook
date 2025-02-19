@@ -1,52 +1,74 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head> <meta charset="utf-8">
-    <title>Kỉ Yếu Lớp</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px; 
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 650px;
-            margin: auto;
-        }
-        img, video {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 20px;
-        }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-        a:hover {
-            background: #0056b3;
-        }
-    </style>
+<head>
+  <meta charset="utf-8">
+  <title>Kỉ Niệm Lớp - Kỉ Yếu Online</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & cơ bản */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fdf6e3;
+      text-align: center;
+      background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #5b4636;
+      font-weight: 600;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .class-memories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .class-memories video {
+      width: 100%;
+      border-radius: 5px;
+      border: 3px solid #e6d8b2;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    @media (max-width:768px) {
+      .class-memories { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Kỉ Yếu Online</h1>
-        <img src="anh.jpg">
-        <video controls>
-            <source src="worldcupfinal.mp4">
-        </video>
-        <p><a href="anhh.jpg" target="_blank"> Xem ảnh khác</a></p>
+  <div class="container">
+    <!-- Thanh điều hướng -->
+    <nav>
+      <a href="index.html">Trang Chủ</a>
+      <a href="group-photos.html">Ảnh Tập Thể</a>
+      <a href="team-members.html">Thành Viên Nhóm</a>
+    </nav>
+    <h1>Kỉ Niệm Lớp</h1>
+    <div class="class-memories">
+      <video controls>
+        <source src="vid1.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+      </video>
+      <video controls>
+        <source src="vid2.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+      </video>
+      <video controls>
+        <source src="vid3.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+      </video>
     </div>
+  </div>
 </body>
 </html>
